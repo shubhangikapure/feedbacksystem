@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h3 {
+  text-align: center;
+  color: #444;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
+
+/* Feedback Form */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #555;
+}
+
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background: #b41746;;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #b41746;
+}
+
+/* Feedback List */
+.feedback-list {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.feedback-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feedback-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-item p {
+  margin: 5px 0;
+}
+
+.feedback-item strong {
+  color: #555;
+}
+
+.feedback-item .button-container {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-top: 10px;
+}
+
+.feedback-item button {
+  padding: 6px 12px; /* Smaller padding for compact buttons */
+  font-size: 0.85rem; /* Slightly smaller font size */
+  font-weight: normal; /* Reduced weight */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.feedback-item button.approve {
+  background: #b41746;
+  width: 40px;
+  color: white;
+}
+
+.feedback-item button.approve:hover {
+  background: #b41746;
+}
+
+.feedback-item button.delete {
+  background: #f44336;
+  color: white;
+}
+
+.feedback-item button.delete:hover {
+  background: #e53935;
+}
+
+
+
+/* Average Rating */
+.average-rating {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.average-rating h3 {
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.average-rating span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #b41746;
+}
+
+/* Star Rating Container */
+.star-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star {
+  font-size: 2rem;
+  color: #ccc; /* Default star color */
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.star:hover,
+.star:hover ~ .star {
+  color: #ffc107; /* Highlight color on hover */
+}
+
+.star.selected {
+  color: #ffc107; /* Selected stars color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form {
+    padding: 15px;
+  }
+
+  .feedback-item {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
